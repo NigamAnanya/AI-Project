@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&family=Montserrat:wght@300;500;800&display=swap');
+
+@layer base{
+    body{
+        font-family: 'Montserrat', sans-serif;
+        overflow-y: none;
+    }
+
+}
+
+@layer utilities {
+    .scrollbar::-webkit-scrollbar {
+        display: none;
+    }
+    .scrollbar{
+        -ms-overflow-style: none; 
+        scrollbar-width: none; 
+    }
+}
+
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
